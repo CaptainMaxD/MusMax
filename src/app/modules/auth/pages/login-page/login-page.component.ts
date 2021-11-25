@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
-  styleUrls: ['./login-page.component.css']
+  styleUrls: ['./login-page.component.css'],
 })
 export class LoginPageComponent implements OnInit {
   errorSession: boolean = false
@@ -21,13 +21,13 @@ export class LoginPageComponent implements OnInit {
       {
         email: new FormControl('', [
           Validators.required,
-          Validators.email
+          Validators.email,
         ]),
         password: new FormControl('',
           [
             Validators.required,
             Validators.minLength(6),
-            Validators.maxLength(12)
+            Validators.maxLength(12),
           ])
       }
     )

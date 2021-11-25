@@ -1,5 +1,5 @@
 {
-  "data": [{
+    "data": [{
           "_id": 1,
           "name": "Getting Over",
           "album": "One Love",
@@ -17,9 +17,9 @@
       },
       {
           "_id": 2,
-          "name"
-          "album"
-          "cover"
+          "name": "Snow",         
+          "album":
+          "cover"                                  
           "artist": {
               "name": "Snow",
               "nickname": "Snow",

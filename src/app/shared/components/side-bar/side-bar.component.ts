@@ -7,9 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./side-bar.component.css']
 })
 export class SideBarComponent implements OnInit {
-
   mainMenu: {
-    defaultOptions: Array<any>, accessLink: Array<any>
+    defaultOptions: Array<any>, 
+    accessLink: Array<any>
   } = { defaultOptions: [], accessLink: [] }
 
   customOptions: Array<any> = []
@@ -20,12 +20,12 @@ export class SideBarComponent implements OnInit {
     this.mainMenu.defaultOptions = [
       {
         name: 'Home',
-        icon: 'uil uil-estate',
+        icon: "https://iconscout.com/icon/home-1768106",
         router: ['/', 'auth']
       },
       {
         name: 'Buscar',
-        icon: 'uil uil-search',
+        icon: 'https://iconscout.com/icon/find-music-2650692',
         router: ['/', 'history']
       },
       {
@@ -63,7 +63,7 @@ export class SideBarComponent implements OnInit {
       {
         name: 'Mi lista º4',
         router: ['/']
-      }
+      },
     ]
 
   }
@@ -73,7 +73,7 @@ export class SideBarComponent implements OnInit {
       queryParams: {
         key1: 'value1',
         key2: 'value2',
-        key3: 'value3'
+        key3: 'value3',
       }
     })
     console.log($event)

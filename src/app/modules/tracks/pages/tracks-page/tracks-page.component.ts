@@ -9,7 +9,9 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./tracks-page.component.css']
 })
 export class TracksPageComponent implements OnInit, OnDestroy {
+  mockTracksList: Array<TrackModel> = [
 
+  ]
   tracksTrending: Array<TrackModel> = []
   tracksRandom: Array<TrackModel> = []
   listObservers$: Array<Subscription> = []
@@ -17,8 +19,8 @@ export class TracksPageComponent implements OnInit, OnDestroy {
   constructor(private trackService: TrackService) { }
 
   ngOnInit(): void {
-    this.loadDataAll() //TODO 📌📌
-    this.loadDataRandom() //TODO 📌📌
+    const { data }: any = (dataRaw as any).default
+    this.mockTracksList = data;
   }
 
   async loadDataAll(): Promise<any> {
@@ -34,6 +36,8 @@ export class TracksPageComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    const data: any = ()
+    console.log(data.data)
 
   }
 

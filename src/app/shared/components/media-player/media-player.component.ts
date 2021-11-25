@@ -9,6 +9,11 @@ import { Subscription } from 'rxjs'; //TODO: Programacion reactiva!
   styleUrls: ['./media-player.component.css']
 })
 export class MediaPlayerComponent implements OnInit, OnDestroy {
+  mockCover: TrackModel = {
+    cover: '',
+    album: '',
+    name: '',
+  }
   @ViewChild('progressBar') progressBar: ElementRef = new ElementRef('')
   listObservers$: Array<Subscription> = []
   state: string = 'paused'
